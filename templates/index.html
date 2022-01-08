@@ -1,0 +1,25 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>BOTNET DETECTION</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    </head>
+    <body class="bord">
+        <div class="par">
+        <div class="chi">
+            <h4>UPLOAD YOUR BOTNET FILES</h4>
+            <h3>FILES SHOULD BE UNLOADED IN THE BINETFLOW FORM</h3>
+        
+        <form method="post"
+              enctype=multipart/form-data>
+            <p>
+                <input type="file" class="custom-file-input" name="file">
+                <input type="submit" class"btn btn-primary" value="upload">
+            </p>
+            
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

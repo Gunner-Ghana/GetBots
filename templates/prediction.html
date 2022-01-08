@@ -1,0 +1,31 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>BOTNET DETECTION</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <div class="source">
+            <h4>These are the malicious source IP ADRESSES</h4>
+            <ul>
+                {% for sourceip in sourceips %}
+                    <li>{{sourceip}}</li>
+                {% else %}
+                    <h2>There are no malicious source ip addresses</h2>
+                {% endfor %}
+        
+        </ul>
+        </div>
+        <div class="dest">
+            <h4>These are the malicious destination IP ADRESSES</h4>
+            <ul >
+                {% for destip in destips %}
+                    <li>{{destip}}</li>
+                {% else %}
+                    <h2>There are no malicious destination ip addresses</h2>
+                {% endfor %}
+        
+            </ul>
+        </div>
+    </body>
+</html>
